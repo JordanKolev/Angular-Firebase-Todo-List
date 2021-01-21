@@ -11,10 +11,11 @@ export class TodoService {
     return this.toDoList;
   }
 
-  addTitle(title: string) {
+  addTitle(title: string, notes: string) {
     this.toDoList.push({
       title: title,
-      isChecked: false
+      isChecked: false, 
+      notes: notes, 
     });
   }
 
